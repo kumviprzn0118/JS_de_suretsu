@@ -1,18 +1,21 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Navigation from './components/Navigation.vue'
+import './assets/main.css'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <HelloWorld msg="Javascriptで漸化式を理解する" />
-    </div>
-  </header>
-  <nav>
-    <RouterLink to="/about">階乗（f(n)=n×(n-1)…×2×1）</RouterLink>
-  </nav>
-  <RouterView />
+  <div class="h-full">
+    <header>
+        <Header msg="Javascriptで漸化式を理解する" />
+    </header>
+  </div>
+  <div class="flex flex-row h-full">
+    <Navigation/>
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
