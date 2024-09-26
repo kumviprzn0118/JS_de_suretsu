@@ -54,7 +54,8 @@ const randomNumber = ()=>{
   <button type="button" id="sort-btn" class="bg-gray-100 border-solid border-2 border-black" @click="randomNumber">ランダム生成</button>
   <button type="button" id="sort-btn" class="bg-gray-100 border-solid border-2 border-black" @click="bubbleSort">バブルソート</button>
   <div>欠点：データ量が多いとメモリ不足でクラッシュしてしまう（O(n^2)）<br>
-        10と1000くらいで比較がわかりやすい
+    非効率: ソート済みの要素も何度も比較してしまうため、無駄な処理が多いです。<br>
+    10と1000くらいだとクラッシュしないので比較しやすい。
   </div>
 </div>
 
