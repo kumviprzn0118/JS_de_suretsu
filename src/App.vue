@@ -9,10 +9,10 @@ import './assets/main.css'
 <template>
   <div class="h-full">
     <header>
-        <Header msg="Javascriptで漸化式を理解する" />
+        <Header msg="Javascript×アルゴリズム" />
     </header>
   </div>
-  <div class="flex flex-row h-full">
+  <div class="md:flex flex-row h-screen">
     <Navigation/>
     <RouterView />
   </div>

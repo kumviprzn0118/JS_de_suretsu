@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import('../views/KaijoView.vue')
     },
     {
+      path: '/bubble',
+      name: 'bubble',
+      component: () => import('../views/BubbleView.vue')
+    },
+    {
       path: '/comingsoon',
       name: 'comingsoon',
       component: () => import('../views/ComingSoon.vue')

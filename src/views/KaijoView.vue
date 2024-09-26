@@ -3,7 +3,7 @@ import ThePageSection from '../components/ThePageSection.vue'
 </script>
 <template>
   <div class="ml-4">
-      <ThePageSection msg="（f(n)=n×(n-1)…×2×1）"/>
+      <ThePageSection msg="再帰関数の基礎（階乗）"/>
   <p>
     function kaijo(n){<br>
       &nbsp;if(n!==0){<br>
