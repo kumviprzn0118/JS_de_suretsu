@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/comingsoon',
       name: 'comingsoon',
       component: () => import('../views/ComingSoon.vue')
+    },
+    {
+      path: '/euclid',
+      name: 'euclid',
+      component: () => import('../views/EuclidView.vue')
     }
   ]
 })

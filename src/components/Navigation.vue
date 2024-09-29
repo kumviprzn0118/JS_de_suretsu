@@ -7,7 +7,8 @@ import { RouterLink, RouterView } from 'vue-router'
     <ul>
       <li class="border-dotted border-gray-400"><RouterLink to="/">ＴＯＰ</RouterLink></li>
       <li class="text-white font-bold bg-gray-400">基礎編</li>
-      <li class="border-dotted border-gray-400"><RouterLink to="/kaijo">階乗</RouterLink></li>
+      <li class="border-dotted border-b-2 border-gray-400"><RouterLink to="/kaijo">階乗</RouterLink></li>
+      <li class="border-dotted border-gray-400"><RouterLink to="/euclid">約数・倍数２</RouterLink></li>
       <li class="text-white font-bold bg-gray-400">ソートアルゴリズム</li>
       <li class="border-dotted border-b-2 border-gray-400"><RouterLink to="/bubble">バブルソート</RouterLink></li>
       <li class="border-dotted border-b-2 border-gray-400"><RouterLink to="/comingsoon">ヒープソート</RouterLink></li>
