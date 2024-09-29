@@ -33,21 +33,21 @@ const randomNumber = ()=>{
 <template>
 <div class="ml-4">
   <ThePageSection msg="バブルソート"/>
-  <p>
-  function bubbleSort(arr) {<br>
-  &nbsp;const len = arr.length;<br>
-  &nbsp;for (let i = 0; i < len; i++) {<br>
-  &nbsp;&nbsp;for (let j = 0; j < len - i - 1; j++) {<br>
-  &nbsp;&nbsp;&nbsp;if (arr[j] > arr[j + 1]) {<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;const temp = arr[j];<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;arr[j] = arr[j + 1];<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;arr[j + 1] = temp;<br>
-  &nbsp;&nbsp;&nbsp;}<br>
-  &nbsp;&nbsp;}<br>
-  &nbsp;}<br>
-  &nbsp;return arr;<br>
-  }<br>
-  </p>
+  <pre><code>
+  function bubbleSort(arr) {
+    const len = arr.length;
+    for (let i = 0; i < len; i++) {
+      for (let j = 0; j < len - i - 1; j++) {
+        if (arr[j] > arr[j + 1]) {
+          const temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
+      }
+    }
+  return arr;
+  }
+  </code></pre>
 
   <textarea class="border-solid border-2">{{val.join()}}</textarea>
   1からの範囲n：<input type="number" class="border-2 border-solid" v-model.number="num">
